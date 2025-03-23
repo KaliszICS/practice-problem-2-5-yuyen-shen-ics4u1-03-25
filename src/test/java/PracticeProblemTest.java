@@ -1,49 +1,116 @@
+import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 import java.io.*;
-
 public class PracticeProblemTest {
+@Test
+@DisplayName("")
+void insertionSortTest5() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class[] cArg = {char[].class};
+        Method method = testClass.getDeclaredMethod("insertionSort", cArg);
+  // Enter code here
+  char[] arr = {'b', 'B'};
+  char[] arr2 = {'B', 'b'};
+    (char[])method.invoke(null, arr);
+  assertArrayEquals(arr2, arr);
+}
 
-   @Test
-   public void testOutput()
-   {
-     PrintStream originalOut = System.out;
-     ByteArrayOutputStream bos = new ByteArrayOutputStream();
-     System.setOut(new PrintStream(bos));
 
-     // action
-     PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void insertionSortTest4() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class[] cArg = {char[].class};
+        Method method = testClass.getDeclaredMethod("insertionSort", cArg);
+  // Enter code here
+  char[] arr = {'a'};
+  char[] arr2 = {'a'};
+    (char[])method.invoke(null, arr);
+  assertArrayEquals(arr2, arr);
+}
 
-     // assertion
-     assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-     // undo the binding in System
-     System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void insertionSortTest3() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class[] cArg = {char[].class};
+        Method method = testClass.getDeclaredMethod("insertionSort", cArg);
+  // Enter code here
+  char[] arr = {};
+  char[] arr2 = {};
+    (char[])method.invoke(null, arr);
+  assertArrayEquals(arr2, arr);
+}
 
-   @Test
-   public void testInputandOutput()
-   {
-      String data = "Users Input";
-      System.setIn(new ByteArrayInputStream(data.getBytes()));
-      
-      PrintStream originalOut = System.out;
-      ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(bos));
 
-      // action
-      PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void insertionSortTest2() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class[] cArg = {char[].class};
+        Method method = testClass.getDeclaredMethod("insertionSort", cArg);
+  // Enter code here
+  char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e', '0', ' '};
+  char[] arr2 = {' ', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+    (char[])method.invoke(null, arr);
+  assertArrayEquals(arr2, arr);
+}
 
-      // assertion
-      assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-      // undo the binding in System
-      System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void insertionSortTest1() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class[] cArg = {char[].class};
+        Method method = testClass.getDeclaredMethod("insertionSort", cArg);
+  // Enter code here
+  char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e'};
+  char[] arr2 = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+    (char[])method.invoke(null, arr);
+  assertArrayEquals(arr2, arr);
+}
 
-   @Test
-   public void testQ3()
-   {
-     
-   }
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
 }
