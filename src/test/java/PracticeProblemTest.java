@@ -8,7 +8,7 @@ public class PracticeProblemTest {
 void insertionSortTest5() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {char[].class};
+        Class<?>[] cArg = {char[].class};
         Method method = testClass.getDeclaredMethod("insertionSort", cArg);
   // Enter code here
   char[] arr = {'b', 'B'};
@@ -30,7 +30,7 @@ void insertionSortTest5() {
 void insertionSortTest4() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {char[].class};
+        Class<?>[] cArg = {char[].class};
         Method method = testClass.getDeclaredMethod("insertionSort", cArg);
   // Enter code here
   char[] arr = {'a'};
@@ -52,7 +52,7 @@ void insertionSortTest4() {
 void insertionSortTest3() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {char[].class};
+        Class<?>[] cArg = {char[].class};
         Method method = testClass.getDeclaredMethod("insertionSort", cArg);
   // Enter code here
   char[] arr = {};
@@ -74,7 +74,7 @@ void insertionSortTest3() {
 void insertionSortTest2() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {char[].class};
+        Class<?>[] cArg = {char[].class};
         Method method = testClass.getDeclaredMethod("insertionSort", cArg);
   // Enter code here
   char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e', '0', ' '};
@@ -96,7 +96,7 @@ void insertionSortTest2() {
 void insertionSortTest1() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {char[].class};
+        Class<?>[] cArg = {char[].class};
         Method method = testClass.getDeclaredMethod("insertionSort", cArg);
   // Enter code here
   char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e'};
