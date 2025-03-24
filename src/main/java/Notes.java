@@ -8,19 +8,21 @@ class Notes {
 		for (int i = 1; i < testArray.length; i++) {
 			int key = testArray[i];
 			int index = i - 1;
-			//goes through the sorted numbers
 			while (index >= 0 && key < testArray[index]) {
-				//shift a value up (copy it up) by 1 index
 				testArray[index + 1] = testArray[index];
 				index--;
 			}
 			testArray[index + 1] = key;
 		}
 
+
+
 		for (int i = 0; i < testArray.length; i++) {
 			System.out.print(testArray[i] + " ");
-
+		}
 		
+
+
 		// //Insertion Sort
 
 		// int index;

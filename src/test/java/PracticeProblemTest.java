@@ -13,7 +13,7 @@ void insertionSortTest5() {
   // Enter code here
   char[] arr = {'b', 'B'};
   char[] arr2 = {'B', 'b'};
-    (char[])method.invoke(null, arr);
+    method.invoke(null, arr);
   assertArrayEquals(arr2, arr);
 }
 
@@ -35,7 +35,7 @@ void insertionSortTest4() {
   // Enter code here
   char[] arr = {'a'};
   char[] arr2 = {'a'};
-    (char[])method.invoke(null, arr);
+    method.invoke(null, arr);
   assertArrayEquals(arr2, arr);
 }
 
@@ -57,7 +57,7 @@ void insertionSortTest3() {
   // Enter code here
   char[] arr = {};
   char[] arr2 = {};
-    (char[])method.invoke(null, arr);
+    method.invoke(null, arr);
   assertArrayEquals(arr2, arr);
 }
 
@@ -79,7 +79,7 @@ void insertionSortTest2() {
   // Enter code here
   char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e', '0', ' '};
   char[] arr2 = {' ', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g'};
-    (char[])method.invoke(null, arr);
+    method.invoke(null, arr);
   assertArrayEquals(arr2, arr);
 }
 
@@ -101,7 +101,7 @@ void insertionSortTest1() {
   // Enter code here
   char[] arr = {'b', 'f', 'a', 'c', 'g', 'd', 'e'};
   char[] arr2 = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
-    (char[])method.invoke(null, arr);
+    method.invoke(null, arr);
   assertArrayEquals(arr2, arr);
 }
 
